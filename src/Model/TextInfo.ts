@@ -39,8 +39,8 @@ export const IntroduceText:IntroduceTexts = {
     greetings: "안녕하세요!",
     introduceText: "저는 신입 백엔드 개발자 이인규입니다.",
     skill1: "Restful API",
-    skill2: "Version Control",
-    skill3: "Communication"
+    skill2: "MVC & CRUD",
+    skill3: "AWS EC2"
 }
 
 export const CodeEducation:CodeEducationTexts = {

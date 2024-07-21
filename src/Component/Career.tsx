@@ -45,7 +45,7 @@ const Career:React.FC = () => {
                 <h1>{CareerText.certificationsText}</h1>
             </div>
         </div>
-        <hr/>
+        <hr className="dark:border-white border-black"/>
     </div>
 
   )
