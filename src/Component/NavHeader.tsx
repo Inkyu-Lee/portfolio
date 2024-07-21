@@ -28,7 +28,7 @@ const NavHeader:React.FC = () => {
     }, []);
 
   return (
-    <nav className="fixed top-0 inset-x-0 bg-gray-900 text-white shadow-md z-50">
+    <nav className="dark:bg-gray-900 bg-white shadow-md fixed top-0 inset-x-0 text-white z-50">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -47,17 +47,17 @@ const NavHeader:React.FC = () => {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0">
-              <a href="#home" className="text-2xl font-bold">MySite</a>
+              <a href="#home" className="text-2xl font-bold dark:text-white text-black">Kyu PortFolio</a>
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <a href="#home" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                <a href="#services" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
-                <a href="#about" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
-                <a href="#contact" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                <a href="#home" className="dark:text-white text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="#services" className="dark:text-white text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                <a href="#about" className="dark:text-white text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="#contact" className="dark:text-white text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
                 <button
                   type="button"
-                  className="ml-4 p-2 text-gray-300 hover:bg-gray-700 rounded-md"
+                  className="ml-4 p-2 dark:text-white text-black hover:bg-gray-700 rounded-md"
                   onClick={toggleDarkMode}
                 >
                   {darkMode ? (
