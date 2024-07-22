@@ -8,8 +8,8 @@ const Learning:React.FC = () => {
       <div className='grid grid-cols-3 gap-3 my-4 text-center'>
         {learningStacks.map((stack, index) => (
             <div key={index}>
-              <img src={stack.src} className="h-3/4 ms-5" alt="BE"/>
-              <h1 className='font-bold text-lg'>{stack.language}</h1>
+              <img src={stack.src} className={`h-3/6 p-2 sm:h-3/5 ms-5 ${stack.language === 'django' || stack.language === 'Kotlin' ? 'dark:bg-white' : ''}`} alt="LEARN"/>
+              <h1 className='font-bold text-lg sm:me-5'>{stack.language}</h1>
             </div>
         ))}
       </div>

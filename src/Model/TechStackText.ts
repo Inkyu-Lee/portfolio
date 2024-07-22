@@ -56,12 +56,12 @@ export const backEndStacks: TechStacks[] = [
 export const frontEndStacks:TechStacks[] = [
     {
         id: 1,
-        language: 'JavaScript (ES6+)',
+        language: 'JavaScript',
         text: '자바스크립트(ES6+)와 TypeScirpt의 사용 경험이 있습니다.',
         text2: 'Node.js',
         text3: 'Express.js',
         text4: 'MongoDB',
-        src: '/assets/images/frontend/JS.png'
+        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/javascript/javascript-plain.svg'
     },
     {
         id: 2,
@@ -74,7 +74,7 @@ export const frontEndStacks:TechStacks[] = [
     },
     {
         id: 3,
-        language: 'React',
+        language: 'React.JS',
         text: '웹 프로그래밍 기본',
         text2: 'Node.js',
         text3: 'Express.js',
@@ -101,7 +101,7 @@ export const frontEndStacks:TechStacks[] = [
     },
     {
         id: 6,
-        language: 'HTML5+CSS3',
+        language: 'HTML5&CSS',
         text: '대표적인 CSS 프레임워크인 Tailwind CSS와 Bootstrap을 사용합니다.',
         text2: 'Node.js',
         text3: 'Express.js',
