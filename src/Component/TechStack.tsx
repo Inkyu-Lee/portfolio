@@ -11,8 +11,8 @@ const TechStack:React.FC = () => {
     SKILLS
   </h1>
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    <BackEnd/>
     <FrontEnd/>
+    <BackEnd/>
     <Tools/>
     <Learning/>
   </div>
