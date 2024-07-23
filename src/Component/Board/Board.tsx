@@ -23,7 +23,7 @@ import ProjectBoard from './ProjectBoard';
         src: "/images/freeBoard.jpg"
         },
         {
-        title: "코딩 게시판",
+        title: "코딩테스트 게시판",
         value: "codingBoard",
         src: "/images/freeBoard.jpg"
         },
@@ -34,7 +34,7 @@ import ProjectBoard from './ProjectBoard';
         },
     ]
 
-    const BoardList:React.FC = () => {
+    const Board:React.FC = () => {
     
 
     const [boardCheck, setBoardCheck] = useState({
@@ -57,27 +57,26 @@ import ProjectBoard from './ProjectBoard';
         })
     }
 
-
-
     return (
 
-
-    <div className='grid grid-cols-4'>
-        {buttons.map((btn, index) => (
-            <button
-            id={btn.title}
-            key={index}
-            value={btn.value}
-            type="button"
-            onClick={(e) => setBoardChecking(e.currentTarget)}
-            className={`dark:text-white text-black hover:bg-cyan-200 
-                    hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium
-                    border-solid dark:border-white border-2 border-black mt-5 mx-2
-                    ` }
-            >{btn.title}
-            </button>
-        ))}
-        <div className="flex flex-col justify-center items-left mt-20">
+    <div>
+        <div className='grid grid-cols-4'>
+            {buttons.map((btn, index) => (
+                <button
+                id={btn.title}
+                key={index}
+                value={btn.value}
+                type="button"
+                onClick={(e) => setBoardChecking(e.currentTarget)}
+                className={`dark:text-white text-black hover:bg-cyan-200 
+                        hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium
+                        border-solid dark:border-white border-2 border-black mt-5 mx-2
+                        text-sm sm:text-lg` }
+                >{btn.title}
+                </button>
+            ))}
+        </div>
+        <div className="mt-20 text-center">
             {boardCheck.freeBoard ? <FreeBoard/> : null}
             {boardCheck.GalleryBoard ? <GalleryBoard/> : null}
             {boardCheck.ProjectBoard ? <ProjectBoard/> : null}
@@ -87,4 +86,4 @@ import ProjectBoard from './ProjectBoard';
   )
 }
 
-export default BoardList
+export default Board

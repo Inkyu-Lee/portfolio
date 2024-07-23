@@ -17,7 +17,7 @@ const Footer:React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 my-2">
                 <div
                 className='flex mx-2 border-solid border-2 border-black dark:border-white rounded-2xl me-3 w-56 my-3 sm:my-0'>
-                  <PhoneIcon className="w-8 h-8 my-2 mx-2"/><p className='my-2'>010 - 0000 - 0000</p>
+                  <PhoneIcon className="w-8 h-8 my-2 mx-2"/><p className='my-2 text-lg'>010 - 0000 - 0000</p>
                 </div>
 
                 <div
@@ -26,8 +26,8 @@ const Footer:React.FC = () => {
                 </div>
 
                 <div
-                className='flex mx-2 border-solid border-2 border-black dark:border-white rounded-2xl me-3 w-56 h-12 my-3 sm:my-0'>
-                  <ComputerDesktopIcon className="w-8 h-8 my-2 mx-2"/><p className='my-2'><a href='https://github.com/Inkyu-Lee' target="_blank" rel="noreferrer noopener">Inkyu GitHub</a></p>
+                className='flex mx-2 border-solid border-2 border-black dark:border-white rounded-2xl me-3 w-56 my-3 sm:my-0'>
+                  <ComputerDesktopIcon className="w-8 h-8 my-2 mx-2"/><p className='my-3'><a href='https://github.com/Inkyu-Lee' target="_blank" rel="noreferrer noopener">Inkyu GitHub</a></p>
                 </div>
               </div>
           </div>

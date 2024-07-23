@@ -58,7 +58,7 @@ export const backEndStacks: TechStacks[] = [
         text2: '',
         text3: 'MongoDB',
         text4: '',
-        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg'
+        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/mysql/mysql-original-wordmark.svg'
     }
  ]
 

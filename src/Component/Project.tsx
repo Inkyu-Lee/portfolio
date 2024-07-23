@@ -12,8 +12,7 @@ const Project:React.FC = () => {
           <div className='flex bg-red-500 w-lvh h-lvh'></div>
         </div>
         <div>
-          <a href="/About">게시판</a>
-          게시판 바로가기 ================ 게시판 개발 및 클라우드 배포 시 연동 예정
+          <a href="/About" className='w-32 h-32 bg-blue-500'>버튼임 게시판 바로가기 (임시 수정예정)</a>
         </div>
         <hr className="dark:border-white border-black my-20"/>
     </div>
