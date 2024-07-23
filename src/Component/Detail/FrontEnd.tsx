@@ -3,7 +3,7 @@ import { frontEndStacks } from "../../Model/TechStackText"
 
 const FrontEnd:React.FC = () => {
   return (
-    <div className="bg-sky-100 dark:bg-slate-800 rounded-lg border-solid border-2 w-full h-98">
+    <div className="bg-sky-100 dark:bg-slate-800 rounded-lg border-solid border-2 w-full h-98 animate__animated animate__lightSpeedInLeft">
       <h1 className="text-4xl text-center font-bold my-10">FRONT-END</h1>
       <div className='grid grid-cols-3 gap-3 my-4 text-center'>
         {frontEndStacks.map((stack, index) => (

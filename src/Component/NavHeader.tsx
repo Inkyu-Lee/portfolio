@@ -37,6 +37,7 @@ const NavHeader:React.FC = () => {
       })
     }
 
+
     useEffect(() => {
       window.addEventListener('scroll', getElementPosition);
       return () => window.removeEventListener('scroll', getElementPosition);
