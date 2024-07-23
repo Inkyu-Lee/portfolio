@@ -11,7 +11,10 @@ const Project:React.FC = () => {
           테스트 길이 늘리기~~
           <div className='flex bg-red-500 w-lvh h-lvh'></div>
         </div>
-        <div>게시판 바로가기 ================ 게시판 개발 및 클라우드 배포 시 연동 예정</div>
+        <div>
+          <a href="/About">게시판</a>
+          게시판 바로가기 ================ 게시판 개발 및 클라우드 배포 시 연동 예정
+        </div>
         <hr className="dark:border-white border-black my-20"/>
     </div>
   )

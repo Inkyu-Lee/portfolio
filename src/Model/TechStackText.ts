@@ -8,7 +8,7 @@ export interface TechStacks{
     src: string;
 }
 
-export const backEndStacks: TechStacks[] = [ 
+export const backEndStacks: TechStacks[] = [
     {
         id: 1,
         language: 'Java',
@@ -45,6 +45,15 @@ export const backEndStacks: TechStacks[] = [
     ,{
         id: 5,
         language: 'PostrgreSQL',
+        text: 'AWS EC2 인스턴스를 사용하여 유지/배포 경험이 있습니다.',
+        text2: '',
+        text3: 'MongoDB',
+        text4: '',
+        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg'
+    }
+    ,{
+        id: 5,
+        language: 'MySQL',
         text: 'AWS EC2 인스턴스를 사용하여 유지/배포 경험이 있습니다.',
         text2: '',
         text3: 'MongoDB',
@@ -106,7 +115,7 @@ export const frontEndStacks:TechStacks[] = [
         text2: 'Node.js',
         text3: 'Express.js',
         text4: 'MongoDB',
-        src: 'assets/images/frontend/HTML5.png'
+        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/html5/html5-plain-wordmark.svg'
     }
     
 ]
