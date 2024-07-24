@@ -11,6 +11,7 @@ import ProjectBoard from './ProjectBoard';
         src: string;    // 게시판 별 이미지 아이콘 필요
     }
 
+
     const buttons:articleBtns[] = [
         {
         title: "자유게시판",
