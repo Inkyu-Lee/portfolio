@@ -32,8 +32,8 @@ const NavHeader:React.FC = () => {
       setNavScroll({
         header: scrollY >= headerPosition && scrollY < mainPosition,
         main: scrollY >= mainPosition && scrollY < projectPosition,
-        project: scrollY >= projectPosition && scrollY < footerPosition - 250,
-        footer: scrollY + 250 >= footerPosition,
+        project: scrollY >= projectPosition && scrollY < footerPosition - 600,
+        footer: scrollY + 600 >= footerPosition,
       })
     }
 

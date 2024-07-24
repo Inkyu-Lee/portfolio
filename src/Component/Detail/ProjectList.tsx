@@ -5,12 +5,12 @@ import Card from '../Card'
 const ProjectList:React.FC = () => {
   return (
         <div className='flex flex-col my-10 mx-10 justify-center items-center'>
-            {projectText.map((project, index) =>(
+            {projectText.map((project, id) =>(
                 <div 
                 data-aos="flip-up"
                 data-aos-duration="1500"
                 >
-                    <Card key={index}
+                    <Card key={id}
                         src={project.src}
                         projectTitle={project.projectTitle}
                         projectContent={project.projectContent}
