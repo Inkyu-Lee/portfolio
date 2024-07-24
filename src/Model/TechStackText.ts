@@ -52,7 +52,7 @@ export const backEndStacks: TechStacks[] = [
         src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg'
     }
     ,{
-        id: 5,
+        id: 6,
         language: 'MySQL',
         text: 'AWS EC2 인스턴스를 사용하여 유지/배포 경험이 있습니다.',
         text2: '',

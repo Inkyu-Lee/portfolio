@@ -6,7 +6,7 @@ const Tools:React.FC = () => {
     <div 
     className="bg-sky-100 dark:bg-slate-800 rounded-lg border-solid border-2 w-full h-98"
     data-aos-duration="1000"
-    data-aos="fade-up">
+    data-aos="fade-right">
       <h1 className="text-4xl text-center font-bold my-10">TOOLS</h1>
       <div className='grid grid-cols-3 gap-3 my-4 text-center'>
         {myTools.map((stack, index) => (

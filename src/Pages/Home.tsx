@@ -8,7 +8,7 @@ import Project from '../Component/Project';
 import TechStack from '../Component/TechStack';
 
 const Home:React.FC = () => {
-
+  
     useEffect(() => {
       AOS.init();
     }, [])

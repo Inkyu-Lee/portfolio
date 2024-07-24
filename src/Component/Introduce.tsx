@@ -8,7 +8,7 @@ const Introduce : React.FC = () => {
         <div className='flex flex-col min-h-screen items-center justify-center'>
             <div className='text-center animate__animated animate__fadeInUp'>
                 <img
-                    src="assets/images/memoticon.png"
+                    src={`${process.env.PUBLIC_URL}/assets/images/memoticon.png`}
                     className="mb-10 mx-auto w-1/2"
                     alt="memoticon"
                 />
