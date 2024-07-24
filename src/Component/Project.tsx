@@ -9,7 +9,7 @@ const Project:React.FC = () => {
         </h1>
         <div className='mb-20'>
           상세 프로젝트 내용 기입예정 (템플릿만 작성)
-          <div className='flex justify-center border-solid border-2 border-black dark:border-white w-auto h-auto'>
+          <div className='flex justify-center w-auto h-auto'>
             <ProjectList/>
           </div>
         </div>
