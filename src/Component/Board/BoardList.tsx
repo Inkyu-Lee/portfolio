@@ -18,12 +18,12 @@ const BoardList:React.FC = () => {
     <div>
         {posts.map(post => (
         <div className='grid grid-cols-3 my-3' key={post.id}>
-            {posts === null ? "API에 응답할 수 없습니다." : null}
             <p>{post.id}</p>
             <h2>{post.title}</h2>
             <p>Kyu</p>
         </div>
     ))}
+    <p>로컬에서 구현완료 https연동 해야 불러오기 가능</p>
     </div>
   )
 }
