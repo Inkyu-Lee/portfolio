@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9e0a161d.css",
-    "main.js": "/portfolio/static/js/main.af3e75f6.js",
-    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "index.html": "/portfolio/index.html",
-    "main.9e0a161d.css.map": "/portfolio/static/css/main.9e0a161d.css.map",
-    "main.af3e75f6.js.map": "/portfolio/static/js/main.af3e75f6.js.map",
-    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "https://inkyu-lee.github.io/portfolio/static/css/main.9e0a161d.css",
+    "main.js": "https://inkyu-lee.github.io/portfolio/static/js/main.c15ef77e.js",
+    "static/js/453.1407b060.chunk.js": "https://inkyu-lee.github.io/portfolio/static/js/453.1407b060.chunk.js",
+    "index.html": "https://inkyu-lee.github.io/portfolio/index.html",
+    "main.9e0a161d.css.map": "https://inkyu-lee.github.io/portfolio/static/css/main.9e0a161d.css.map",
+    "main.c15ef77e.js.map": "https://inkyu-lee.github.io/portfolio/static/js/main.c15ef77e.js.map",
+    "453.1407b060.chunk.js.map": "https://inkyu-lee.github.io/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e0a161d.css",
-    "static/js/main.af3e75f6.js"
+    "static/js/main.c15ef77e.js"
   ]
 }
