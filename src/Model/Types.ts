@@ -25,6 +25,7 @@ export interface TechStacks{
 
 
 export interface ProjectTitle {
+    id:number;
     projectTitle:string;
     projectContent:string
     projectDateStart:number;

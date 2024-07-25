@@ -1,4 +1,4 @@
-import { CareerText, CodeEducation } from "../Model/TextInfo"
+import { CareerText, CodeEducation } from "../../Model/TextInfo"
 
 const Career:React.FC = () => {
   return (

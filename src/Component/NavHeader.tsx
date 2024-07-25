@@ -89,11 +89,8 @@ const NavHeader:React.FC = () => {
                 onClick={toggleMenu}
                 >
                 <span className="sr-only">Main Menu</span>
-                {isOpen ? (
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                ) : (
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-                )}
+                {isOpen ? (<XMarkIcon className="h-6 w-6" aria-hidden="true" />) :
+                (<Bars3Icon className="h-6 w-6" aria-hidden="true" />)}
                 </button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -145,35 +142,35 @@ const NavHeader:React.FC = () => {
           </div>
           <div className={`sm:hidden ${isOpen ? 'block' : 'hidden'}`}>
             <div className="grid grid-rows px-2 pt-2 pb-3 space-y-1">
-            <button
+              <button
                     type="button"
                     value="header"
                     className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.header ? 'bg-cyan-200 dark:bg-gray-600' : ''}`}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
                     >Home</button>
 
-                    <button
+              <button
                     type="button"
                     value="main"
                     className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.main ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
                     >About</button>
 
-                    <button
+              <button
                     type="button"
                     value="project"
                     className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.project ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
                     >Project</button>
 
-                    <button
+              <button
                     type="button"
                     value="footer"
                     className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.footer ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
                     >Contact</button>
                   
-                    <button
+              <button
                     type="button"
                     className="ml-4 p-2 dark:text-white text-black text-center hover:bg-gray-700 rounded-md w-12 h-12"
                     onClick={toggleDarkMode}

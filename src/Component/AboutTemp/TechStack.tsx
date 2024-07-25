@@ -1,8 +1,8 @@
 import React from 'react'
-import BackEnd from './Detail/BackEnd'
-import FrontEnd from './Detail/FrontEnd'
-import Learning from './Detail/Learning'
-import Tools from './Detail/Tools'
+import BackEnd from '../Detail/BackEnd'
+import FrontEnd from '../Detail/FrontEnd'
+import Learning from '../Detail/Learning'
+import Tools from '../Detail/Tools'
 
 const TechStack:React.FC = () => {
   return (

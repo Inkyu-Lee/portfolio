@@ -9,8 +9,8 @@ const About:React.FC = () => {
         <h1 className='text-4xl font-bold my-2'>안녕하세요!</h1>
         <p className='text-2xl opacity-75 my-2'>여기는 저만의 작업공간 입니다.</p>
         <hr className="dark:border-white border-black"/>
-        <Board/>
       </div>
+        <Board/>
     </div>
   )
 }

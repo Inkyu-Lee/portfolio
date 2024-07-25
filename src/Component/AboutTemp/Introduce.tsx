@@ -1,5 +1,5 @@
 import 'animate.css';
-import { IntroduceText } from '../Model/TextInfo';
+import { IntroduceText } from '../../Model/TextInfo';
 
 
 const Introduce : React.FC = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { projectText } from '../../Model/ProjectText'
-import Card from '../Card'
+import ProjectCard from './ProjectCard'
 
 const ProjectList:React.FC = () => {
   return (
@@ -10,7 +10,9 @@ const ProjectList:React.FC = () => {
                 data-aos="flip-up"
                 data-aos-duration="1500"
                 >
-                    <Card key={id}
+                    <ProjectCard key={id}
+                        id={project.id}
+                        linksrc={`${process.env.PUBLIC_URL}/project`}
                         src={project.src}
                         projectTitle={project.projectTitle}
                         projectContent={project.projectContent}

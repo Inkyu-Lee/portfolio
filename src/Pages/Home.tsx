@@ -1,11 +1,11 @@
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import React, { useEffect } from 'react';
-import Career from '../Component/Career';
-import Footer from '../Component/Footer';
-import Introduce from '../Component/Introduce';
-import ProjectHome from '../Component/ProjectHome';
-import TechStack from '../Component/TechStack';
+import Career from '../Component/AboutTemp/Career';
+import Footer from '../Component/AboutTemp/Footer';
+import Introduce from '../Component/AboutTemp/Introduce';
+import TechStack from '../Component/AboutTemp/TechStack';
+import ProjectHome from '../Component/ProjectTemp/ProjectHome';
 
 const Home:React.FC = () => {
   
