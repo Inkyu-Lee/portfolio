@@ -5,7 +5,8 @@ export const CareerText:CareerTexts = {
     graduate:"국립한밭대학교",
     major: "응용소프트웨어학과(야간)",
     date: "2024.03 ~ 재학중",
-    score: "학점: 3.6/4.5",
+    score: "학점 : - /4.5",
+    // score: "학점: 3.6/4.5",
     certifications:["SQLD(SQL개발자)", "ADsP(데이터분석 준전문가)"],
     certificationsDate: ["2024. 03", "2024. 05"],
     certificationsText: "시험처: 한국데이터산업진흥원"

@@ -3,7 +3,7 @@ import { ProjectTitle } from "../Model/Types";
 const Card:React.FC<ProjectTitle> = ( {src, projectTitle, projectContent, projectDateStart, projectDateEnd} ) => {
   return (
     <div className="flex flex-col items-center sm:grid sm:grid-cols-2">
-        <a href="#" className="flex flex-col items-center
+        <a href="https://inkyu-lee.github.io/portfolio" className="flex flex-col items-center
         bg-white border border-gray-200 rounded-lg
         shadow sm:flex-row sm:w-auto hover:bg-gray-100
         dark:border-gray-700 dark:bg-gray-800

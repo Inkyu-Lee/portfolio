@@ -78,6 +78,7 @@ import ProjectBoard from './ProjectBoard';
             ))}
         </div>
         <div className="mt-20 text-center">
+            
             {boardCheck.freeBoard ? <FreeBoard/> : null}
             {boardCheck.GalleryBoard ? <GalleryBoard/> : null}
             {boardCheck.ProjectBoard ? <ProjectBoard/> : null}

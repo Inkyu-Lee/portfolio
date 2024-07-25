@@ -8,10 +8,10 @@ const BoardList:React.FC = () => {
     const [posts, setPosts] = useState<Post[]>([])
 
     useEffect(() => {
-        fetch('http://3.235.4.181:8080/api/articles')
+        fetch('https://inkyuportfolio.duckdns.org/api/articles')
             .then(response => response.json())
             .then(data => setPosts(data))
-            .catch(error => console.error('요청한 API에 응답할 수 없음! :' + 'fetch', error));
+            .catch(error => console.error('요청한 API에 응답할 수 없음! : fetch ', error));
     }, [])
 
   return (
@@ -23,7 +23,6 @@ const BoardList:React.FC = () => {
             <p>Kyu</p>
         </div>
     ))}
-    <p>로컬에서 구현완료 https연동 해야 불러오기 가능</p>
     </div>
   )
 }
