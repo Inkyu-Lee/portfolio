@@ -1,11 +1,4 @@
-
-export interface ProjectTitle {
-    projectTitle:string;
-    projectContent:string
-    projectDateStart:number;
-    projectDateEnd:number;
-    src:string;
-}
+import { ProjectTitle } from "./Types";
 
 export const projectText:ProjectTitle[] = 
     [{
@@ -38,3 +31,4 @@ export const projectText:ProjectTitle[] =
     }
 
     ]
+

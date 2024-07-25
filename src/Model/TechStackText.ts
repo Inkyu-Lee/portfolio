@@ -1,12 +1,4 @@
-export interface TechStacks{
-    id: number;
-    language: string;
-    text: string;
-    text2: string;
-    text3: string;
-    text4: string;
-    src: string;
-}
+import { TechStacks } from "./Types"
 
 export const backEndStacks: TechStacks[] = [
     {

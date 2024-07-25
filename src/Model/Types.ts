@@ -1,0 +1,50 @@
+
+export interface CardTemplate extends ProjectTitle{
+    src:string;
+}
+
+export interface IntroduceTexts{
+    greetings: string;
+    introduceText: string;
+    backEndText: string;
+    skill1: string;
+    skill2: string;
+    skill3: string;
+}
+
+
+export interface TechStacks{
+    id: number;
+    language: string;
+    text: string;
+    text2: string;
+    text3: string;
+    text4: string;
+    src: string;
+}
+
+
+export interface ProjectTitle {
+    projectTitle:string;
+    projectContent:string
+    projectDateStart:number;
+    projectDateEnd:number;
+    src:string;
+}
+
+export interface CareerTexts{
+    graduate: string;
+    major: string;
+    date: string;
+    certifications: string[];
+    certificationsDate: string[];
+    certificationsText: string;
+    score: string;
+}
+
+export interface CodeEducationTexts{
+    company: string;
+    date: string;
+    education: string;
+    education2: string;
+}

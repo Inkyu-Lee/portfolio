@@ -1,28 +1,5 @@
-export interface IntroduceTexts{
-    greetings: string;
-    introduceText: string;
-    backEndText: string;
-    skill1: string;
-    skill2: string;
-    skill3: string;
-}
+import { CareerTexts, CodeEducationTexts, IntroduceTexts } from "./Types";
 
-export interface CareerTexts{
-    graduate: string;
-    major: string;
-    date: string;
-    certifications: string[];
-    certificationsDate: string[];
-    certificationsText: string;
-    score: string;
-}
-
-export interface CodeEducationTexts{
-    company: string;
-    date: string;
-    education: string;
-    education2: string;
-}
 
 export const CareerText:CareerTexts = {
     graduate:"국립한밭대학교",

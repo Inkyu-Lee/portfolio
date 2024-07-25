@@ -1,4 +1,4 @@
-import { ProjectTitle } from "../Model/ProjectText";
+import { ProjectTitle } from "../Model/Types";
 
 const Card:React.FC<ProjectTitle> = ( {src, projectTitle, projectContent, projectDateStart, projectDateEnd} ) => {
   return (
@@ -19,7 +19,7 @@ const Card:React.FC<ProjectTitle> = ( {src, projectTitle, projectContent, projec
         <div className="text-center sm:text-right my-10 ">
             <h1 className="text-2xl font-bold sm:text-4xl">PROJECT TITLE</h1>
             <p className="text-xl opacity-75 sm:text-2xl">PROJECT CONTENT</p>
-            <p className="text-xl opacity-75 sm:text-2xl">PROJECT DATE</p>
+            <p className="text-xl opacity-75 sm:text-2xl">{projectDateStart} ~ {projectDateEnd}</p>
         </div>
         </div>
     </div>
