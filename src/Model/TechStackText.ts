@@ -34,15 +34,15 @@ export const backEndStacks: TechStacks[] = [
         text4: '',
         src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/nodejs/nodejs-plain-wordmark.svg'
     }
-    ,{
-        id: 5,
-        language: 'PostrgreSQL',
-        text: 'AWS EC2 인스턴스를 사용하여 유지/배포 경험이 있습니다.',
-        text2: '',
-        text3: 'MongoDB',
-        text4: '',
-        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg'
-    }
+    // ,{
+    //     id: 5,
+    //     language: 'PostrgreSQL',
+    //     text: 'AWS EC2 인스턴스를 사용하여 유지/배포 경험이 있습니다.',
+    //     text2: '',
+    //     text3: 'MongoDB',
+    //     text4: '',
+    //     src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original.svg'
+    // }
     ,{
         id: 6,
         language: 'MySQL',
@@ -149,30 +149,30 @@ export const learningStacks: TechStacks[] = [
         text4: 'MongoDB',
         src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/flutter/flutter-plain.svg'
     },
-    {
-        id: 5,
-        language: 'django',
-        text: 'Full-Stack 프레임워크로 공부중 입니다. (수정)',
-        text2: 'Node.js',
-        text3: 'Express.js',
-        text4: 'MongoDB',
-        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/django/django-plain-wordmark.svg'
-    },
-    {
-        id: 6,
-        language: 'C# & Azure',
-        text: 'Full-Stack 프레임워크로 공부중 입니다. (수정)',
-        text2: 'Node.js',
-        text3: 'Express.js',
-        text4: 'MongoDB',
-        src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/azure/azure-plain-wordmark.svg'
-    }
+    // {
+    //     id: 5,
+    //     language: 'django',
+    //     text: 'Full-Stack 프레임워크로 공부중 입니다. (수정)',
+    //     text2: 'Node.js',
+    //     text3: 'Express.js',
+    //     text4: 'MongoDB',
+    //     src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/django/django-plain-wordmark.svg'
+    // },
+    // {
+    //     id: 6,
+    //     language: 'C# & Azure',
+    //     text: 'Full-Stack 프레임워크로 공부중 입니다. (수정)',
+    //     text2: 'Node.js',
+    //     text3: 'Express.js',
+    //     text4: 'MongoDB',
+    //     src: 'https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/azure/azure-plain-wordmark.svg'
+    // }
 ]
 
 export const myTools:TechStacks[] = [ 
     {
         id: 1,
-        language: 'VS-Code',
+        language: 'VS Code',
         text: 'Full-Stack 프레임워크로 공부중 입니다. (수정)',
         text2: 'Node.js',
         text3: 'Express.js',

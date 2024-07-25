@@ -26,7 +26,7 @@ const Card:React.FC<ProjectData> = ( {id, src, projectTitle, projectContent, pro
         <img className="object-cover w-full rounded-t-lg h-96 sm:h-auto sm:w-1/2 sm:rounded-none sm:rounded-s-lg" src={src} alt=""/>
         <div className="flex flex-col justify-between p-4 leading-normal">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{projectTitle}</h5>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{projectContent}</p>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{projectContent}<br/>클릭 시 상세페이지로 이동</p>
         </div>
     </button>
         <div className="border-t-2 sm:border-t-0 sm:border-l-2 border-black dark:border-white sm:ms-20">
