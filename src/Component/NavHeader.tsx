@@ -79,8 +79,8 @@ const NavHeader:React.FC = () => {
     }, []);
 
   return (
-        <nav id="header" className="dark:bg-gray-900 bg-white opacity-85 shadow-md fixed top-0 inset-x-0 text-white z-50">
-          <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <nav id="header" className="dark:bg-gray-900 mx-auto max-w-screen-xl bg-white opacity-85 shadow-md fixed top-0 inset-x-0 text-white z-50">
+          <div className=" mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <button

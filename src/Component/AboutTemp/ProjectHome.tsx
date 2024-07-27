@@ -1,13 +1,13 @@
 import React from 'react'
-import ProjectList from './ProjectList'
+import ProjectList from '../ProjectTemp/ProjectList'
 
 const Project:React.FC = () => {
   return (
     <div id="project" className="container max-w-screen-xl mx-auto my-20">
-        <h1 className="text-2xl sm:text-4xl mb-4 mt-2">
+        <h1 className="text-2xl sm:text-4xl mb-4 mt-2 mx-2">
             PROJECT
         </h1>
-        <div className='mb-20'>
+        <div className='mb-20 mx-2'>
           상세 프로젝트 내용 기입예정 (템플릿만 작성)
           <div className='flex justify-center w-auto h-auto'>
             <ProjectList/>

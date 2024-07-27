@@ -4,8 +4,8 @@ import React, { useEffect } from 'react';
 import Career from '../Component/AboutTemp/Career';
 import Footer from '../Component/AboutTemp/Footer';
 import Introduce from '../Component/AboutTemp/Introduce';
+import ProjectHome from '../Component/AboutTemp/ProjectHome';
 import TechStack from '../Component/AboutTemp/TechStack';
-import ProjectHome from '../Component/ProjectTemp/ProjectHome';
 
 const Home:React.FC = () => {
   

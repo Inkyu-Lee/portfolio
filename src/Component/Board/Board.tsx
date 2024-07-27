@@ -60,7 +60,7 @@ import ProjectBoard from './ProjectBoard';
 
         return (
 
-        <div className='relative bottom-60'>
+        <div className='relative top-60'>
             <div className='grid grid-cols-4'>
                 {buttons.map((btn, index) => (
                     <button
