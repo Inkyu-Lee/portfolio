@@ -1,43 +1,12 @@
 import React, { useState } from 'react';
+import { buttons } from '../../Model/BoardText';
 import CodingBoard from './CodingBoard';
 import FreeBoard from './FreeBoard';
 import GalleryBoard from './GalleryBoard';
 import ProjectBoard from './ProjectBoard';
 
-
-    interface articleBtns {
-        title: string;
-        value: string;
-        src: string;    // 게시판 별 이미지 아이콘 필요
-    }
-
-
-    const buttons:articleBtns[] = [
-        {
-        title: "자유게시판",
-        value: "freeBoard",
-        src: "/images/freeBoard.jpg"
-        },
-        {
-        title: "프로젝트 게시판",
-        value: "projectBoard",
-        src: "/images/freeBoard.jpg"
-        },
-        {
-        title: "코딩테스트 게시판",
-        value: "codingBoard",
-        src: "/images/freeBoard.jpg"
-        },
-        {
-        title: "갤러리",
-        value: "galleryBoard",
-        src: "/images/freeBoard.jpg"
-        },
-    ]
-
     const Board:React.FC = () => {
     
-
         const [boardCheck, setBoardCheck] = useState({
             freeBoard: true,
             GalleryBoard: false,

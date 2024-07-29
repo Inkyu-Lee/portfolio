@@ -23,6 +23,12 @@ export interface TechStacks{
     src: string;
 }
 
+export interface articleBtns {
+    title: string;
+    value: string;
+    src: string;    // 게시판 별 이미지 아이콘 필요
+}
+
 
 export interface ProjectTitle {
     id:number;
