@@ -1,8 +1,6 @@
 import React from 'react'
 import BoardList from './BoardList'
 
-// API key = { 등록예정 }
-
 
 const ProjectBoard:React.FC = () => {
     return (

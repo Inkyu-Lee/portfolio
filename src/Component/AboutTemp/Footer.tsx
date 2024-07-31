@@ -17,12 +17,12 @@ const Footer:React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-3 my-2">
                 <div
                 className='flex mx-2 border-solid border-2 border-black dark:border-white rounded-2xl me-3 w-56 my-3 sm:my-0'>
-                  <PhoneIcon className="w-8 h-8 my-2 mx-2"/><p className='my-2 text-lg'>010 - 0000 - 0000</p>
+                  <PhoneIcon className="w-8 h-8 my-2 mx-2"/><a href="tel:01000000000" className='my-2 text-lg'>010 - 0000 - 0000</a>
                 </div>
 
                 <div
                 className='flex mx-2 border-solid border-2 border-black dark:border-white rounded-2xl me-3 w-56 my-3 sm:my-0'>
-                  <EnvelopeIcon className="w-8 h-8 my-2 mx-2"/><p className='my-2 mt-3 text-sm'>inkyulee9704@gmail.com</p>
+                  <EnvelopeIcon className="w-8 h-8 my-2 mx-2"/><a href="mailto:inkyulee9704@gmail.com" className='my-2 mt-3 text-sm'>inkyulee9704@gmail.com</a>
                 </div>
 
                 <div
@@ -30,6 +30,9 @@ const Footer:React.FC = () => {
                   <ComputerDesktopIcon className="w-8 h-8 my-2 mx-2"/><p className='my-3'><a href='https://github.com/Inkyu-Lee' target="_blank" rel="noreferrer noopener">Inkyu GitHub</a></p>
                 </div>
               </div>
+          </div>
+          <div className='text-center my-20 font-bold'>
+            &copy; inkyu-Lee가 모든 권리를 가짐.
           </div>
     </div>
   )

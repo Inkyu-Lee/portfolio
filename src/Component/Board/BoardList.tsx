@@ -11,9 +11,8 @@ const BoardList:React.FC = () => {
     const [getId, setId] = useState<number>(7);
 
     const navigateArticle = useNavigate()
-
     useEffect(() => {
-        fetch('https://inkyuportfolio.duckdns.org/api/articles')
+        fetch( process.env.REACT_APP_API_KEY_ALL_ARTICLE + 'articles' )
             .then(response => response.json())
             .then(data => setArticles(data))
             .catch(error => console.error('요청한 API에 응답할 수 없음! : fetch ', error));
