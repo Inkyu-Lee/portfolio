@@ -13,7 +13,7 @@ const ShowArticle:React.FC = () => {
     }
 
     useEffect(() => {
-        fetch('https://inkyuportfolio.duckdns.org/api/articles/' + String(getIdData()))
+        fetch(process.env.REACT_APP_API_KEY_ARTICLE_ID + String(getIdData()))
         .then(response => response.json())
         .then(data => setArticle(data))
         .catch(error => console.error('요청한 API에 응답 할 수 없음! : fetch ', error));
