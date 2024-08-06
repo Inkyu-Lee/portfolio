@@ -15,7 +15,7 @@ const Card:React.FC<ProjectData> = ( {id, src, projectTitle, projectContent, pro
   }
 
   return (
-    <div className="flex flex-col items-center sm:grid sm:grid-cols-2">
+    <div className="flex flex-col items-center max-w-screen-xl sm:grid sm:grid-cols-2">
         <button onClick={(e) => handleClick(id)} className="flex flex-col items-center
         bg-white border border-gray-200 rounded-lg
         shadow sm:flex-row sm:w-auto hover:bg-gray-100

@@ -1,9 +1,6 @@
 import React from 'react';
 import BoardList from './BoardList';
 
-// API key = { http://3.235.4.181:8080/api/ }
-// articles , article by id, comment, plus comment
-//
 
 
 const CodingBoard:React.FC = () => {
