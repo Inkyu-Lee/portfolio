@@ -1,58 +1,23 @@
 import { Bars3Icon, MoonIcon, SunIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const NavHeader:React.FC = () => {
+const OtherPageHeader:React.FC = () => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [darkMode, setDarkMode] = useState<boolean>(false);
-    const [NavScroll, setNavScroll] = useState({
-      header: false,
-      main: false,
-      project: false,
-      footer: false,
-    });
-
-    const getElementPosition = () => {
-      const header = document.getElementById('header');
-      const main = document.getElementById('main');
-      const project = document.getElementById('project');
-      const footer = document.getElementById('footer');
-      const scrollY = window.scrollY;
-
-      if(header != null && main != null && project != null && footer != null){
-      }else{
-        return;
-      }
-
-      const headerPosition = Math.floor(scrollY + header.getBoundingClientRect().top) ;
-      const mainPosition = Math.floor(scrollY + main.getBoundingClientRect().top) -70;
-      const projectPosition = Math.floor(scrollY + project.getBoundingClientRect().top) -70;
-      const footerPosition = Math.floor(scrollY + footer.getBoundingClientRect().top) - 70;
-
-      setNavScroll({
-        header: scrollY >= headerPosition && scrollY < mainPosition,
-        main: scrollY >= mainPosition && scrollY < projectPosition,
-        project: scrollY >= projectPosition && scrollY < footerPosition - 600,
-        footer: scrollY + 600 >= footerPosition,
-      })
-    }
-
-
-    useEffect(() => {
-      window.addEventListener('scroll', getElementPosition);
-      return () => window.removeEventListener('scroll', getElementPosition);
-    }, [NavScroll])
-
+    const navigateToggle = useNavigate()
 
     const toggleNavBar = (event: EventTarget & HTMLButtonElement) => {
-      const target = document.getElementById(event.value)
-      if (target == null){
+      const compareStr = event.value
+      console.log(compareStr)
+      if (compareStr == null){
         return
       }
-      const scrollY = event.value === 'header' ? 0 : window.scrollY
-      const setScrollY = Math.floor((target.getBoundingClientRect().top) + scrollY ) - 60;
-
-      window.scrollTo({top: setScrollY,behavior:'smooth',});
+      console.log(compareStr)
+      navigateToggle( compareStr === "login" ? "/login" :
+        compareStr === "about" ? "/about" :
+        compareStr === "MyPage" ? "/MyPage" : "contact" )
       
       
     }
@@ -79,7 +44,7 @@ const NavHeader:React.FC = () => {
     }, []);
 
   return (
-        <nav id="header" className="dark:bg-gray-900 mx-auto max-w-screen-xl bg-white opacity-85 shadow-md fixed top-0 inset-x-0 text-white z-50">
+        <nav id="header" className="dark:bg-gray-900 mx-auto bg-white opacity-85 shadow-md fixed top-0 inset-x-0 text-white z-50">
           <div className=" mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -102,29 +67,29 @@ const NavHeader:React.FC = () => {
 
                     <button
                     type="button"
-                    value="header"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.header ? 'bg-cyan-200 dark:bg-gray-600' : ''}`}
+                    value="login"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium`}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
-                    >Home</button>
+                    >Login</button>
 
                     <button
                     type="button"
-                    value="main"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.main ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
+                    value="about"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium  `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
-                    >About</button>
+                    >Board</button>
 
                     <button
                     type="button"
-                    value="project"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.project ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
+                    value="MyPage"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium  `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
-                    >Project</button>
+                    >MyPage</button>
 
                     <button
                     type="button"
-                    value="footer"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.footer ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
+                    value="contact"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
                     >Contact</button>
                   
@@ -144,29 +109,29 @@ const NavHeader:React.FC = () => {
             <div className="grid grid-rows px-2 pt-2 pb-3 space-y-1">
               <button
                     type="button"
-                    value="header"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.header ? 'bg-cyan-200 dark:bg-gray-600' : ''}`}
+                    value="login"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
-                    >Home</button>
+                    >Login</button>
 
               <button
                     type="button"
-                    value="main"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.main ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
+                    value="board"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium  `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
-                    >About</button>
+                    >Board</button>
 
               <button
                     type="button"
-                    value="project"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.project ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
+                    value="MyPage"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
-                    >Project</button>
+                    >My Page</button>
 
               <button
                     type="button"
-                    value="footer"
-                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium ${NavScroll.footer ? 'bg-cyan-200 dark:bg-gray-600' : ''} `}
+                    value="contact"
+                    className={`dark:text-white text-black hover:bg-cyan-200 hover:dark:bg-gray-600 px-3 py-2 rounded-md font-medium  `}
                     onClick={(e) => toggleNavBar(e.currentTarget)}
                     >Contact</button>
                   
@@ -183,4 +148,4 @@ const NavHeader:React.FC = () => {
   )
 }
 
-export default NavHeader
+export default OtherPageHeader

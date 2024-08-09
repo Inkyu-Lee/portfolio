@@ -2,7 +2,7 @@ import { CareerText, CodeEducation } from "../../Model/TextInfo"
 
 const Career:React.FC = () => {
   return (
-    <div id="main" className="container mx-auto px-4 sm:px-6 max-w-screen-xl">
+    <div id="main" className="mx-auto px-4 sm:px-6">
         <hr className="dark:border-white border-black"/>
         <div className="flex flex-row justify-start">
             <h1 id="about-nav2" className="text-2xl sm:text-4xl mb-4 mt-2">

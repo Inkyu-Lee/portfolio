@@ -1,8 +1,11 @@
+import { AxiosRequestConfig } from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { API_ADDRESS } from '../../Model/Types';
+import { client } from '../api/ApiList';
 import { Article } from '../api/PostGet';
 
-
+const API_KEY = 'article/all'
 
 const BoardList:React.FC = () => {
 
@@ -11,12 +14,22 @@ const BoardList:React.FC = () => {
     const [getId, setId] = useState<number>(7);
 
     const navigateArticle = useNavigate()
+
     useEffect(() => {
-        fetch( process.env.REACT_APP_API_KEY_ALL_ARTICLE + 'articles' )
-            .then(response => response.json())
-            .then(data => setArticles(data))
-            .catch(error => console.error('요청한 API에 응답할 수 없음! : fetch ', error));
+      console.log(API_ADDRESS + API_KEY)
+      const getData = async (url: string, config?: AxiosRequestConfig) => {
+      try {
+        const response = await client.get<Article[]>(url, config);
+        console.log(response.data)
+        setArticles(response.data)
+        return response.data;
+      } catch (error:any) {
+        throw new Error(error.message);
+      }
+    }
+    getData(API_ADDRESS + API_KEY);
     }, [])
+
 
     const handleArticles = (id:number) => {
       setId(id)
@@ -28,7 +41,7 @@ const BoardList:React.FC = () => {
         {Articles.map(article => (
           <div className='grid grid-cols-3 my-3' key={article.id}>
               <p>{article.id}</p>
-              <a className=' hover:font-bold hover:underline hover:cursor-pointer' onClick={() => handleArticles(article.id)}>{article.title}</a>
+              <a className=' hover:font-bold hover:underline hover:cursor-pointer' onClick={() => handleArticles(article.id)}>{article.articleTitle}</a>
               <p>Kyu</p>
           </div>
       ))}

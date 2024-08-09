@@ -3,10 +3,10 @@ import { learningStacks } from '../../Model/TechStackText'
 
 const Learning:React.FC = () => {
   return (
-    <div 
+    <div
     className="bg-sky-100 dark:bg-slate-800 rounded-lg border-solid border-2 w-full h-98"
     data-aos-duration="1000"
-    data-aos="fade-left">
+    data-aos="zoom-in-up">
       <h1 className="text-4xl text-center font-bold my-10">LEARNING & INTEREST</h1>
       <div className='grid grid-cols-3 gap-3 my-4 text-center'>
         {learningStacks.map((stack, index) => (

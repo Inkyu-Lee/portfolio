@@ -7,7 +7,7 @@ const BackEnd:React.FC = () => {
   return (
     <div 
     id="front-end" 
-    data-aos="fade-left"
+    data-aos="zoom-in-up"
     data-aos-duration="1000"
     className={`bg-sky-100 dark:bg-slate-800 rounded-lg border-solid border-2 w-full h-98`}>
 

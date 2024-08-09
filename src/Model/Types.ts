@@ -55,3 +55,5 @@ export interface CodeEducationTexts{
     education: string;
     education2: string;
 }
+
+export const API_ADDRESS:string = String(process.env.REACT_APP_API_ADDRESS);

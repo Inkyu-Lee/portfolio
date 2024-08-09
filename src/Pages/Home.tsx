@@ -6,6 +6,7 @@ import Footer from '../Component/AboutTemp/Footer';
 import Introduce from '../Component/AboutTemp/Introduce';
 import ProjectHome from '../Component/AboutTemp/ProjectHome';
 import TechStack from '../Component/AboutTemp/TechStack';
+import NavHeader from '../Component/Header/NavHeader';
 
 const Home:React.FC = () => {
   
@@ -13,7 +14,8 @@ const Home:React.FC = () => {
       AOS.init();
     }, [])
   return (
-    <div className=''>
+    <div className='container mx-auto px-4 max-w-screen-xl'>
+        <NavHeader/>
         <Introduce/>
         <Career/>
         <TechStack/>

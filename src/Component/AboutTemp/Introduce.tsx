@@ -4,7 +4,7 @@ import { IntroduceText } from '../../Model/TextInfo';
 
 const Introduce : React.FC = () => {
   return (
-    <div className='container mx-auto px-4'>
+    <div>
         <div className='flex flex-col min-h-screen items-center justify-center'>
             <div className='text-center animate__animated animate__fadeInUp'>
                 <img

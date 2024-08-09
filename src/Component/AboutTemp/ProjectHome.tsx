@@ -3,7 +3,7 @@ import ProjectList from '../ProjectTemp/ProjectList'
 
 const Project:React.FC = () => {
   return (
-    <div id="project" className="container max-w-screen-xl mx-auto my-20">
+    <div id="project" className="mx-auto my-20">
         <h1 className="text-2xl sm:text-4xl mb-4 mt-2 mx-2">
             PROJECT
         </h1>

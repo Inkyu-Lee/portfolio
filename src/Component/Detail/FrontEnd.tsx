@@ -3,7 +3,7 @@ import { frontEndStacks } from "../../Model/TechStackText"
 
 const FrontEnd:React.FC = () => {
   return (
-    <div data-aos="fade-right"
+    <div data-aos="zoom-in-up"
     data-aos-duration="1000"
     className="bg-sky-100 dark:bg-slate-800 rounded-lg border-solid border-2 w-full h-98">
       <h1 className="text-4xl text-center font-bold my-10">FRONT-END</h1>

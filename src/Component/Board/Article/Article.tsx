@@ -1,8 +1,10 @@
+import { AxiosRequestConfig } from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import { API_ADDRESS } from '../../../Model/Types';
+import { client } from '../../api/ApiList';
 import { Article, Comments } from '../../api/PostGet';
 import CommentCreate from './CommentCreate';
-
 
 // PortFolio Project API (1.0.0)
 // API 사용 Notion : https://www.notion.so/PortFolio-API-Docs-73543d8bdf824fd29b2fd7f43af919ff
@@ -13,26 +15,40 @@ const ShowArticle:React.FC = () => {
     const [Article, setArticle] = useState<Article>()
     const [comment, setComment] = useState<[Comments]>()
 
+    const API_KEY = "article/"
+
     const getIdData = () => {
         return location.state.id
     }
 
-    useEffect(() => {  // Axios로 변경예정 임시 JS Fetch사용 
-        fetch(process.env.REACT_APP_API_KEY_ARTICLE_ID + String(getIdData()))
-        .then(response => response.json())
-        .then(data => setArticle(data))
-        .catch(error => console.error('요청한 API에 응답 할 수 없음! : fetch ', error));
-        }, [getIdData()])
+    useEffect(() => { 
+    const getData = async (url: string, config?: AxiosRequestConfig) => {
+        try {
+            const response = await client.get<Article>(url, config);
+            console.log(response.data)
+            console.log(process.env.REACT_APP_API_KEY)
+            setArticle(response.data)
+            return response.data;
+        } catch (error:any) {
+            throw new Error(error.message);
+        }
+        }
+        getData(API_ADDRESS + API_KEY + String(getIdData()));
+
+        
+
+
+    }, [getIdData()])
 
     return (
         <div className='flex flex-col min-h-screen items-center justify-center m-auto max-w-2xl'>
             <div className='grid grid-row'>
                 <div className='grid grid-cols-3 my-10'>
                     <p>No. {Article?.id}</p>
-                    <p>{Article?.title}</p>
+                    <p>{Article?.articleTitle}</p>
                     <p>조회수: Article?.Hits(체크필요) </p>
                 </div>
-                <p>{Article?.content}</p>
+                <p>{Article?.articleContent}</p>
                 <hr className='my-5 border-black dark:border-white'/>
                 <div className='grid grid-rows'>
                     <div className='grid grid-cols-3'>
